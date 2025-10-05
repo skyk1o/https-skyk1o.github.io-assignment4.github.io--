@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4 - Responsive Web Design</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="text-center my-4">
+    Assignment 4<br>
+</h1>
+
+  <section id="part1" class="p-4">
+    <h2>Part 1. Media Queries</h2>
+
+    <div class="task my-4">
+      <h3>Task 1 – Responsive Typography</h3>
+      <p>This text and heading sizes will change depending on screen width.</p>
+      <h4>Resize your browser to see the difference.</h4>
+    </div>
+
+    <div class="task my-4">
+      <h3>Task 2 – Responsive Boxes</h3>
+      <div class="mq-container">
+        <div class="mq-box">Box 1</div>
+        <div class="mq-box">Box 2</div>
+        <div class="mq-box">Box 3</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="part2" class="p-4 bg-light">
+    <h2>Part 2. Bootstrap Grid System</h2>
+
+    <div class="task my-4">
+      <h3>Task 3 – Bootstrap Responsive Columns</h3>
+      <div class="container text-center">
+        <div class="row g-3">
+          <div class="col-md-4 col-sm-6 col-12 bg-primary text-white p-4">Column 1</div>
+          <div class="col-md-4 col-sm-6 col-12 bg-success text-white p-4">Column 2</div>
+          <div class="col-md-4 col-sm-12 col-12 bg-danger text-white p-4">Column 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task my-4">
+      <h3>Task 4 – Bootstrap Navigation Bar</h3>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MyLogo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#part1">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="part3" class="p-4">
+    <h2>Part 3. Combined Project – Responsive Portfolio Page</h2>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="portfolioNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="projects" class="row g-3">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Personal Portfolio Website</h5>
+              <p class="card-text">
+                A responsive personal portfolio website created with HTML, CSS, and Bootstrap.
+                It adjusts layout for desktop, tablet, and mobile screens. The project includes
+                a navigation bar, cards, and a footer section.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Music Streaming App UI</h5>
+              <p class="card-text">
+                A simple front-end layout of a music streaming app. It demonstrates
+                the use of the Bootstrap grid and custom media queries to organize song cards
+                and playlists in a responsive layout.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">
+                A weather information page showing basic layout design skills. Built using Bootstrap grid
+                and styled with CSS media queries to ensure proper display across devices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="col-lg-4 col-md-5 col-12 mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h4>About Me</h4>
+            <p>Hello, I'm Amir Abil, a Front-End student at Astana IT University. I enjoy building responsive layouts using HTML, CSS, and Bootstrap.</p>
+            <h5>Contact</h5>
+            <p>Email: abilamir0@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+      © 2025 Created by Amir Abil
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
